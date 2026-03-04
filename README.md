@@ -1,16 +1,58 @@
-# React + Vite
+# MIT Global Startup Hackathon Guide Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a simple guide page for students who want to apply for the **MIT Global Startup Hackathon**, part of the MIT Global Startup Workshop (MIT GSW).
 
-Currently, two official plugins are available:
+The page explains the hackathon opportunity and provides a direct link to the official application form.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌍 About MIT Global Startup Hackathon
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The **MIT Global Startup Hackathon** is a startup-focused hackathon held as part of the MIT Global Startup Workshop (MIT GSW).
 
-## Expanding the ESLint configuration
+Participants collaborate to develop startup ideas, receive mentorship, and present their solutions to a global audience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This guide page was created to help students easily access the application information and participate in the event.
+
+---
+
+## 🚀 Why Participate
+
+Participants can gain:
+
+- Exposure to the MIT global entrepreneurship network  
+- Feedback from experienced mentors  
+- Opportunities to develop and pitch startup ideas  
+- Recognition and official awards for outstanding teams  
+
+---
+
+## 📝 How to Apply
+
+1. Open the application form  
+2. Complete the registration  
+3. Enter the **team code `10C` in the Name field**
+
+Application Form:  
+https://docs.google.com/forms/d/e/1FAIpQLSfULqufxsVu_acVmQiun4mzuBZYWJMG-Ol0LdY_eTbIpkpWoQ/viewform
+
+---
+
+## 💡 Project Purpose
+
+Although the MIT Global Startup Hackathon is an exciting opportunity, many students were not aware of the event or how to apply.
+
+This guide page aims to make the information clearer and easier to access so that more students can participate.
+
+---
+
+## 🛠 Tech Stack
+
+-React Vite
+-vercel
+
+---
+
+## 📌 License
+
+MIT License
