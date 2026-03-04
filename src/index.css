@@ -9,6 +9,7 @@ body {
   color: #e2e8f0;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* ── Aurora blobs ─────────────────────────── */
