@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* ── Custom base ──────────────────────────── */
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Helvetica Neue', Arial, 'Malgun Gothic', '맑은 고딕', sans-serif;
+  background: #081032;
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── Aurora blobs ─────────────────────────── */
+.aurora {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.22;
+  animation: aurora-float 14s ease-in-out infinite;
+}
+.aurora-red   { width:600px;height:600px;background:radial-gradient(circle,#DA6A75,transparent);top:-120px;left:-120px;animation-delay:0s; }
+.aurora-blue  { width:500px;height:500px;background:radial-gradient(circle,#63BAE4,transparent);top:60px;right:-100px;animation-delay:-5s; }
+.aurora-violet{ width:420px;height:420px;background:radial-gradient(circle,#4a7cc7,transparent);bottom:-80px;left:35%;animation-delay:-9s; }
+
+@keyframes aurora-float {
+  0%,100%{ transform:translate(0,0) scale(1); }
+  33%    { transform:translate(28px,-28px) scale(1.06); }
+  66%    { transform:translate(-18px,18px) scale(0.96); }
+}
+
+/* ── Grid overlay ─────────────────────────── */
+.grid-overlay {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ── Glass card ───────────────────────────── */
+.glass {
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.glass-hover {
+  transition: border-color .3s, box-shadow .3s, transform .3s;
+}
+.glass-hover:hover {
+  border-color: rgba(99,186,228,.5);
+  box-shadow: 0 0 36px rgba(99,186,228,.18);
+  transform: translateY(-5px);
+}
+
+/* ── Gold glow card ───────────────────────── */
+.gold-glass {
+  border: 1px solid rgba(218,106,117,.4);
+  background: rgba(218,106,117,.06);
+  backdrop-filter: blur(14px);
+}
+.gold-glass-hover {
+  transition: border-color .3s, box-shadow .3s, transform .3s;
+}
+.gold-glass-hover:hover {
+  border-color: rgba(218,106,117,.7);
+  box-shadow: 0 0 32px rgba(218,106,117,.25);
+  transform: translateY(-5px);
+}
+
+/* ── Shimmer button ───────────────────────── */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg,#63BAE4,#4fa8d5);
+  transition: transform .25s, box-shadow .25s;
+}
+.btn-glow::after {
+  content:'';
+  position:absolute;top:-50%;left:-60%;
+  width:40%;height:200%;
+  background:rgba(255,255,255,0.18);
+  transform:skewX(-20deg);
+  transition: left .55s;
+}
+.btn-glow:hover::after { left:130%; }
+.btn-glow:hover {
+  transform:translateY(-3px);
+  box-shadow:0 14px 44px rgba(99,186,228,.5);
+}
+
+/* ── Blink / bounce ───────────────────────── */
+@keyframes blink   { 0%,100%{opacity:1}50%{opacity:.3} }
+@keyframes bounce-y{ 0%,100%{transform:translateY(0)}50%{transform:translateY(9px)} }
+.blink    { animation: blink 1.6s infinite; }
+.bounce-y { animation: bounce-y 2.2s infinite; }
+
+/* ── Fade-in-up ───────────────────────────── */
+@keyframes fade-up { from{opacity:0;transform:translateY(32px)} to{opacity:1;transform:translateY(0)} }
+.fade-up { animation: fade-up .7s ease both; }
+.delay-1 { animation-delay:.15s; }
+.delay-2 { animation-delay:.3s; }
+.delay-3 { animation-delay:.45s; }
+
+/* ── Scrollbar ────────────────────────────── */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#081032}
+::-webkit-scrollbar-thumb{background:#63BAE4;border-radius:3px}
