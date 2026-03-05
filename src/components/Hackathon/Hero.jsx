@@ -31,7 +31,7 @@ export default function Hero() {
 
         <h1 className="fade-up delay-1 text-4xl sm:text-5xl md:text-7xl font-black leading-[1.08] tracking-tight text-white mb-4">
           <span className="text-[#63BAE4]">MIT</span> Global<br />
-          Startup Workshop
+          Startup Hackathon
         </h1>
         <p className="fade-up delay-2 text-lg sm:text-xl md:text-2xl text-slate-400 font-light mb-10">
           Startup Competition 참가 모집
