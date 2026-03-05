@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import HowToApply from './components/HowToApply'
@@ -27,6 +28,7 @@ function App() {
       <Bootcamp />
       <CTA />
       <Footer />
+      <Analytics />
     </div>
   )
 }
