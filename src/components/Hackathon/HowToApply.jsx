@@ -1,4 +1,4 @@
-import { FORM_URL } from '../App'
+import { FORM_URL } from '../../App'
 
 const steps = [
   {
@@ -11,7 +11,7 @@ const steps = [
     title: '이름란 입력',
     desc: (
       <>
-        이름란에 <strong className="text-[#DA6A75]">팀 코드 (C)</strong>를 반드시 먼저 기입합니다.
+        이름란에 <strong className="text-[#DA6A75]">팀 코드 (C)</strong>를 뒤에 기입합니다.
         <br />예) <strong className="text-white">홍길동 (C)</strong>
       </>
     ),
@@ -54,10 +54,18 @@ export default function HowToApply() {
                           bg-[#DA6A75]/10 blur-3xl pointer-events-none" />
 
           <div className="relative z-10">
-            <p className="text-4xl mb-4">⚠️</p>
-            <h3 className="text-[#DA6A75] text-xl font-extrabold mb-7">
-              이름란에 팀 코드를 반드시 기재해주세요
+            <p className="text-4xl mb-4">🎯</p>
+            <h3 className="text-[#DA6A75] text-xl font-extrabold mb-3">
+              이름란에 추천 코드를 기재해주세요
             </h3>
+            <p className="text-slate-300 text-sm leading-relaxed mb-2">
+              <span className="font-mono font-bold text-[#DA6A75]">(C)</span>는 추천 코드로,
+              신청자에게는 <span className="text-white font-semibold">아무런 영향이 없습니다.</span>
+            </p>
+            <p className="text-slate-300 text-sm leading-relaxed mb-7">
+              하지만 이 코드가 입력될수록 공식 서포터즈의 <span className="text-white font-semibold">성과로 집계</span>되어
+              활동에 큰 힘이 됩니다! 🙏
+            </p>
 
             {/* Format box */}
             <div className="inline-block border-2 border-[#DA6A75]/60 rounded-xl px-6 py-4 md:px-10 md:py-5 mb-5

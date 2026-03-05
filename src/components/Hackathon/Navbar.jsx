@@ -1,4 +1,4 @@
-import { FORM_URL } from '../App'
+import { FORM_URL } from '../../App'
 
 export default function Navbar() {
   return (
