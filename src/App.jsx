@@ -16,7 +16,7 @@ export { FORM_URL }
 
 function App() {
   return (
-      <div className="min-h-screen bg-[#081032] text-slate-200 font-sans">
+      <div className="min-h-screen w-full text-slate-200 font-sans">
       <Navbar />
       <Hero />
       <HowToApply />
