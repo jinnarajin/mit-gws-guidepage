@@ -36,7 +36,7 @@ export default function CTA() {
             </p>
             <div className="mt-3 inline-block bg-[#DA6A75]/15 border border-[#DA6A75]/40
                             rounded-lg px-5 py-2">
-              <span className="text-[#DA6A75] font-black text-xl tracking-wider">홍길동(10C)</span>
+              <span className="text-[#DA6A75] font-black text-xl tracking-wider">홍길동(C)</span>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function CTA() {
         <p className="mt-8 text-slate-500 text-xs">
           본 페이지는 MIT GSW 공식 홍보 서포터즈가 제작했습니다.
           <br />
-          <span className="text-slate-400">이름란에 <span className="text-[#DA6A75] font-bold">10C</span>를 기재해주시면 저희에게 큰 힘이 됩니다</span>
+          <span className="text-slate-400">이름 뒤에 <span className="text-[#DA6A75] font-bold">(C)</span>를 기재해주시면 저희에게 큰 힘이 됩니다</span>
         </p>
       </div>
     </section>

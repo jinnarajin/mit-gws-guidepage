@@ -11,8 +11,8 @@ const steps = [
     title: '이름란 입력',
     desc: (
       <>
-        이름란에 <strong className="text-[#DA6A75]">팀 코드 (10C)</strong>를 반드시 먼저 기입합니다.
-        <br />예) <strong className="text-white">홍길동 (10C)</strong>
+        이름란에 <strong className="text-[#DA6A75]">팀 코드 (C)</strong>를 반드시 먼저 기입합니다.
+        <br />예) <strong className="text-white">홍길동 (C)</strong>
       </>
     ),
   },
@@ -64,15 +64,15 @@ export default function HowToApply() {
                             bg-white/[0.03] backdrop-blur-sm">
               <p className="text-xs text-slate-400 mb-2 tracking-widest uppercase">이름 입력 형식</p>
               <p className="text-3xl md:text-4xl font-black tracking-wider text-white">
-                <span className="text-[#DA6A75] whitespace-nowrap">홍길동 (10C)</span>
+                <span className="text-[#DA6A75] whitespace-nowrap">홍길동 (C)</span>
               </p>
             </div>
 
             <p className="text-slate-400 text-sm">
               ※ 예시:&ensp;
-              <strong className="text-white">박지훈 (10C)</strong>
+              <strong className="text-white">박지훈 (C)</strong>
               &ensp;/&ensp;
-              <strong className="text-white">이서연 (10C)</strong>
+              <strong className="text-white">이서연 (C)</strong>
             </p>
           </div>
         </div>
