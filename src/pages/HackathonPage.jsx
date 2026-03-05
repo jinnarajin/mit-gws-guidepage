@@ -1,5 +1,6 @@
 import { Analytics } from '@vercel/analytics/react'
-import Navbar from '../components/Hackathon/Navbar'
+import { FORM_URL } from '../App'
+import Navbar from '../components/Navbar'
 import Hero from '../components/Hackathon/Hero'
 import HowToApply from '../components/Hackathon/HowToApply'
 import Timeline from '../components/Hackathon/Timeline'
@@ -13,7 +14,7 @@ import Footer from '../components/Hackathon/Footer'
 export default function HackathonPage() {
   return (
     <div className="min-h-screen w-full text-slate-200 font-sans">
-      <Navbar />
+      <Navbar registerUrl={FORM_URL} />
       <Hero />
       <HowToApply />
       <Benefits />

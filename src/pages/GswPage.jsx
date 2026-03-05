@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Navbar from '../components/Navbar'
 
 const REGISTER_URL = 'https://gsw2026.com/'
 
@@ -61,32 +61,10 @@ const steps = [
   },
 ]
 
-export default function HomePage() {
+export default function GswPage() {
   return (
     <div className="min-h-screen w-full text-slate-200 font-sans" style={{ background: '#081032' }}>
-      {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4
-                      border-b border-white/[0.07] glass">
-        <div className="text-sm font-black tracking-widest uppercase text-white">
-          MIT <span className="text-[#63BAE4]">GSW</span> 2026
-        </div>
-        <div className="flex items-center gap-4">
-          <Link
-            to="/hackathon"
-            className="text-xs text-slate-400 hover:text-[#63BAE4] transition-colors"
-          >
-            해커톤 안내 →
-          </Link>
-          <a
-            href={REGISTER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-glow text-white text-xs md:text-sm font-bold px-4 md:px-5 py-2 rounded-full"
-          >
-            참가 신청하기 →
-          </a>
-        </div>
-      </nav>
+      <Navbar registerUrl={REGISTER_URL} />
 
       {/* Hero */}
       <section className="relative min-h-screen flex flex-col items-center justify-center text-center

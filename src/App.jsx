@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import HomePage from './pages/HomePage'
+import GswPage from './pages/GswPage'
 import HackathonPage from './pages/HackathonPage'
 
 export const FORM_URL =
@@ -9,8 +9,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/hackathon" element={<HackathonPage />} />
+        <Route path="/" element={<HackathonPage />} />
+        <Route path="/gsw" element={<GswPage />} />
       </Routes>
     </BrowserRouter>
   )
