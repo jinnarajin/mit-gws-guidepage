@@ -1,4 +1,4 @@
-import { FORM_URL } from '../App'
+import { FORM_URL } from '../../App'
 
 const perks = [
   { icon: '🌍', text: '글로벌 멘토 피드백' },
